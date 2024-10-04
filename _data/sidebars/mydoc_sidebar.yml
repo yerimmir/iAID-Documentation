@@ -1,0 +1,106 @@
+# This is your sidebar TOC. The sidebar code loops through sections here and provides the appropriate formatting.
+
+entries:
+    - title: sidebar
+      product: lite ver
+      version: 1.1.0
+      folders:
+          - title: Introduction
+            output: web, pdf
+            folderitems:
+                - title: Solution Overview
+                  url: /introduction__solution_overview.html
+                  output: web, pdf
+                  type: frontmatter
+
+                - title: System Requirement
+                  url: /introduction__system_requirement.html
+                  output: web, pdf
+
+                - title: Supported Modalities
+                  url: /introduction__supported_modalities.html
+                  output: web, pdf
+
+                - title: License Agreement
+                  url: /introduction__license_agreement.html
+                  output: web, pdf
+
+          - title: PACS
+            output: web, pdf
+            folderitems:
+                - title: PACS Overview
+                  url: /pacs__pacs_overview.html
+                  output: web, pdf
+
+                - title: Access & Login
+                  url: /pacs__login.html
+                  output: web, pdf
+
+                - title: Worklist
+                  url: /pacs__worklist.html
+                  output: web, pdf
+
+                - title: Preview
+                  url: /pacs__preview.html
+                  output: web, pdf
+
+                - title: Report
+                  url: /pacs__report.html
+                  output: web, pdf
+
+          - title: Viewer
+            output: web, pdf
+            folderitems:
+                - title: Viewer Overview
+                  url: /viewer__viewer_overview.html
+                  output: web, pdf
+
+                - title: Series
+                  url: /viewer__series.html
+                  output: web, pdf
+
+                - title: Layout
+                  url: /viewer__layout.html
+                  output: web, pdf
+
+                - title: Split Series
+                  url: /viewer__split_series.html
+                  output: web, pdf
+
+                - title: Pan
+                  url: /viewer__pan.html
+                  output: web, pdf
+
+                - title: Zoom
+                  url: /viewer__zoom.html
+                  output: web, pdf
+
+                - title: Contrast
+                  url: /viewer__contrast.html
+                  output: web, pdf
+
+                - title: Measure
+                  url: /viewer__measure.html
+                  output: web, pdf
+
+                - title: Link
+                  url: /viewer__link.html
+                  output: web, pdf
+
+                - title: Overlay
+                  url: /viewer__overlay.html
+                  output: web, pdf
+
+                - title: Information
+                  url: /viewer__information.html
+                  output: web, pdf
+
+                - title: FullScreen
+                  url: /viewer__fullScreen.html
+                  output: web, pdf
+
+          # - title: ShortCuts
+          #   output: web, pdf
+          #   folderitems:
+          #       url: /shortcuts__keyboard_shortcuts.html
+          #       output: web, pdf

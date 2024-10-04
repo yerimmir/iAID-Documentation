@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% include pdf_header.html %}
+    <style>
+        @media print {
+            * {
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+            h1 {
+                color: #eeeeee;
+                font-size: 30px;
+            }
+            h2 {
+                color: #6598e0;
+            }
+            h3 {
+                color: #3765a5;
+            }
+            p {
+                color: #aaaaaa;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% for sidebar in site.sidebars %}
+        {% for entry in site.data.sidebars[sidebar].entries %}
+            {% for folder in entry.folders %}
+                {% for folderitem in folder.folderitems %}
+                    {% for page in site.pages %}
+                        {% if page.title == folderitem.title %}
+                            <main class="container">
+                                <div class="pdf-content" style="page-break-after:always;">
+                                    <article class="post-body">
+                                        <h1>{{ page.title }}</h1>
+                                        {{ page.content | markdownify}}
+                                    </article>
+                                </div>
+                            </main>
+                        {% endif %}
+                    {% endfor %}
+                {% endfor %}
+            {% endfor %}
+        {% endfor %}
+    {% endfor %}
+</body>
+
+</html>
+
+
